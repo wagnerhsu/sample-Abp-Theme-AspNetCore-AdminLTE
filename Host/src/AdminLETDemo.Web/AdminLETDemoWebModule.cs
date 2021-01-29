@@ -36,6 +36,7 @@ using Volo.Abp.UI.Navigation.Urls;
 using Volo.Abp.UI;
 using Volo.Abp.UI.Navigation;
 using Volo.Abp.VirtualFileSystem;
+using AdminLTE.Abp.AspNetCore.Mvc.UI.Theme.Basic;
 
 namespace AdminLETDemo.Web
 {
@@ -47,7 +48,7 @@ namespace AdminLETDemo.Web
         typeof(AbpIdentityWebModule),
         typeof(AbpAccountWebIdentityServerModule),
         //typeof(AbpAspNetCoreMvcUiBasicThemeModule),
-        typeof(AbpAspNetCoreMvcUiBasicThemeModule),
+        typeof(AbpAspNetCoreMvcUiBasicAdminLTEThemeModule),
         typeof(AbpAspNetCoreAuthenticationJwtBearerModule),
         typeof(AbpTenantManagementWebModule),
         typeof(AbpAspNetCoreSerilogModule),

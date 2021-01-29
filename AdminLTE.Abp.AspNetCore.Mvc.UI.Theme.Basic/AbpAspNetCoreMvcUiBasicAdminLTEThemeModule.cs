@@ -16,13 +16,13 @@ namespace AdminLTE.Abp.AspNetCore.Mvc.UI.Theme.Basic
       typeof(AbpAspNetCoreMvcUiThemeSharedModule),
       typeof(AbpAspNetCoreMvcUiMultiTenancyModule)
       )]
-    public class AbpAspNetCoreMvcUiBasicThemeModule : AbpModule
+    public class AbpAspNetCoreMvcUiBasicAdminLTEThemeModule : AbpModule
     {
         public override void PreConfigureServices(ServiceConfigurationContext context)
         {
             PreConfigure<IMvcBuilder>(mvcBuilder =>
             {
-                mvcBuilder.AddApplicationPartIfNotExists(typeof(AbpAspNetCoreMvcUiBasicThemeModule).Assembly);
+                mvcBuilder.AddApplicationPartIfNotExists(typeof(AbpAspNetCoreMvcUiBasicAdminLTEThemeModule).Assembly);
             });
         }
 
@@ -40,7 +40,7 @@ namespace AdminLTE.Abp.AspNetCore.Mvc.UI.Theme.Basic
 
             Configure<AbpVirtualFileSystemOptions>(options =>
             {
-                options.FileSets.AddEmbedded<AbpAspNetCoreMvcUiBasicThemeModule>("AdminLTE.Abp.AspNetCore.Mvc.UI.Theme.Basic");
+                options.FileSets.AddEmbedded<AbpAspNetCoreMvcUiBasicAdminLTEThemeModule>("AdminLTE.Abp.AspNetCore.Mvc.UI.Theme.Basic");
             });
 
             Configure<AbpToolbarOptions>(options =>

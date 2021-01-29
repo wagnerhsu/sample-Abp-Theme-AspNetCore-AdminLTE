@@ -7,7 +7,7 @@
 @using AdminLTE.Abp.AspNetCore.Mvc.UI.Theme.Basic.Themes.Basic.Components.SideBar
 @using AdminLTE.Abp.AspNetCore.Mvc.UI.Theme.Basic.Themes.Basic.Components.PageAlerts
 @using AdminLTE.Abp.AspNetCore.Mvc.UI.Theme.Basic.Themes.Basic.Components.Footer
-@using Volo.Abp.AspNetCore.Mvc.UI.Theme.Shared.Components
+@using Volo.Abp.Ui.Branding
 @using Volo.Abp.AspNetCore.Mvc.UI.Theming
 @using Volo.Abp.AspNetCore.Mvc.UI.Widgets.Components.WidgetScripts
 @using Volo.Abp.AspNetCore.Mvc.UI.Widgets.Components.WidgetStyles
@@ -177,9 +177,6 @@
 
                 @(await Component.InvokeAsync<ToolBarViewComponent>())
             </ul>
-
-
-
         </nav>
 
         <!-- Main Sidebar Container -->
@@ -193,12 +190,9 @@
                         <!-- Add icons to the links using the .nav-icon class
                         with font-awesome or any other icon font library -->
                         @(await Component.InvokeAsync<SideBarViewComponent>())
-
                     </ul>
                 </nav>
             </div>
-
-
         </aside>
 
         <!--Content-->
@@ -213,7 +207,6 @@
                     @await Component.InvokeLayoutHookAsync(LayoutHooks.PageContent.Last, StandardLayouts.Empty)
                 </div>
             </section>
-
         </div>
 
         <!--Footer-->
@@ -222,7 +215,6 @@
         <aside class="control-sidebar control-sidebar-dark">
             <!-- Control sidebar content goes here -->
         </aside>
-
     </div>
 
     <abp-script-bundle name="@BasicThemeBundles.Scripts.Global" />

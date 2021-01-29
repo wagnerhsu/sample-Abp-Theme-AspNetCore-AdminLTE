@@ -1,7 +1,4 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using System;
-using System.Collections.Generic;
-using System.Text;
 using System.Threading.Tasks;
 using Volo.Abp.AspNetCore.Mvc;
 using Volo.Abp.UI.Navigation;
@@ -23,6 +20,4 @@ namespace AdminLTE.Abp.AspNetCore.Mvc.UI.Theme.Basic.Themes.Basic.Components.Sid
             return View("~/Themes/Basic/Components/SideBar/Default.cshtml", menu);
         }
     }
-
-
 }

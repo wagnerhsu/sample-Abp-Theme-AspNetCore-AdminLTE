@@ -38,6 +38,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\..\..\AdminLTE.Abp.AspNetCore.Mvc.UI.Theme.Basic\AdminLTE.Abp.AspNetCore.Mvc.UI.Theme.Basic.csproj" />
     <ProjectReference Include="..\AdminLETDemo.Application\AdminLETDemo.Application.csproj" />
     <ProjectReference Include="..\AdminLETDemo.HttpApi\AdminLETDemo.HttpApi.csproj" />
     <ProjectReference Include="..\AdminLETDemo.MongoDB\AdminLETDemo.MongoDB.csproj" />
